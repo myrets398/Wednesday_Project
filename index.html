@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+
+<head>
+    <meta charset="  utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title> Different Types of Cars You'll Want to Know About</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel="stylesheet" type=" text/css">
+    <script src="https://use.fontawesome.com/b4ccb25300.js">
+    </script>
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link  rel="stylesheet" href="./css/materialize.min.css"  /> -->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="Wednesday_Project" ng-controller="mainCtrl">
+  <div ui-view="models"></div>
+    <div ui-view="prices"></div>
+    <div ui-view="value out of score of 10"></div>
+    <!-- <div id="header">Header 900x100 px</div>
+    <div id="righttop">RightTop<br/>150x200 px</div>
+    <div id="lefttop">LeftTop 150x75 px</div>
+    <div id="content">Content 600x400 px</div>
+    <div id="rightbottom">RightBottom 150x200 px</div>
+    <div id="footer">Footer 900x100 px</div>
+    <nav class="navbar navbar-default row">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="subheading" ng-app="" ng-init="nameOfPage='Various Cars and Their Properties: A Demonstration of AngularJS and the Model View Controller Design Concept'">
+        <h2><span ng-bind="nameOfPage"></span></h2></div>
+    <div class="row">
+        <div class="span12">
+            <div class="well" ui-view></div>
+            <!--Content of the above defined business & portfolio states will be injected here -->
+        </div>
+    </div>
+
+    <!-- <dom-dir>domDir.js</dom-dir> -->
+    <div class="container">
+        <div class="headtext">
+            <h1>        Popular Cars You Would Enjoy Driving       </h1>
+            <menu ng-click class="menu">
+
+
+                <section ui-view></section>
+                <!-- <ul> Project Idea 1 </ul>
+                <ul> Project Idea 2 </ul>
+                <ul> Project Idea 3 </ul>
+                <ul> Project Idea 4 </ul> -->
+                <!-- movable box item -->
+                <box> </box>
+            </menu>
+            <!-- <div ng-include="'myFile.htm'"></div> -->
+            <!-- <div class="row">
+                <ol>Volvo Parts</ol>
+                <ol>Hyundai Parts</ol>
+                <ol>Toyota Parts</ol>
+                <ol>Mitsubishi Parts</ol>
+                <ol>GMC Parts</ol>
+                <ol>Infiniti Parts</ol>
+            </div> -->
+            <div class="randomCar">
+                <FORM METHOD="LINK" ACTION="https://www.google.com/search?site=&tbm=isch&source=hp&biw=840&bih=974&q=car&oq=car&gs_l=img.3..0l10.2166.2779.0.5248.3.3.0.0.0.0.161.342.1j2.3.0....0...1ac.1.64.img..0.3.340.GozdgrzGx6E#tbm=isch&q=automobile">
+                    <INPUT TYPE="submit" VALUE="Push this for a random car">
+                </FORM>
+                <!-- animate on click -->
+                <div class="test0">
+                    <FORM METHOD="LINK" ACTION="https://www.yelp.com/biz/speedy-lube-bozeman?osq=white+tire">
+                        <INPUT TYPE="submit" VALUE="Push this for a link to find car repair services.">
+                    </FORM>
+                </div>
+
+            </div>
+            <div class="linkbox">
+                <i class="fa fa-arrow-left fa-3x"></i>
+                <div class="box">
+                    <img src="images/2016-hyundaiveloster.png" />
+                </div>
+                <div class="box">
+                    <img src="images/2008-2010_Toyota_yaris.jpg" />
+                </div>
+                <div class="box">
+                    <img src="images/2005_Mitsubishi_Colt.jpg" />
+                </div>
+                <div class="box">
+                    <img src="images/GMC-Acadia.jpg" />
+                </div>
+                <div class="box">
+                    <img src="images/volvo-v40.jpg" />
+                </div>
+                <div class="box">
+                    <img src="images/infiniti_qx_30.jpg" />
+                </div>
+                </br>
+                </br>
+                <i class="fa fa-arrow-right fa-3x"></i>
+                <!-- <i class="fa fa-bars fa-2x menu"></i> -->
+
+            </div>
+            <div class="ngCars">
+            <!-- <div class="ngCars" ng-repeat="model in cars"> -->
+                <h3>{{ car.make }}</h3>
+                <p><strong>Model: {{ car.model }}</p>
+                    <p><strong>Description: {{ car.description }}</p>
+                      <p><strong>Price: {{ car.price | currency }}</p></div>
+                <!-- </h3> -->
+                  <!-- <p>Name : <input type="text" ng-model="name"></p> -->
+                  <pre>{{ cars | json }}</pre>
+              </div>
+              <div class="padding"></div>
+                <h2 class="usefulLinks"><i class="fa fa-arrows-v"></i> Links to the Manufacturers' Websites </h2>
+
+                <div class="linkbox"><col><a href="http://www.hyundai.com/">Hyundai</a></br>
+                    <a href="http://www.toyota.com/">Toyota</a></br>
+                    <a href="http://www.mitsubishi.com/"> Mitsubishi</a></br>
+                    <a href="http://www.gmc.com/">GMC</a></br>
+                    <a href="http://www.volvo.com/">Volvo</a></br>
+                    <a href="http://www.infiniti.com/">Infiniti</a></br></col>
+                </div>
+                <div class="padding"></div>
+                <div class="img">
+                    <img src="images/Under-Construction1.jpg" />
+                </div>
+
+            </div>
+        </div>
+        <!-- copied from W3School -->
+
+        <div ng-app="Wednesday_Project" ng-controller="mainCtrl">
+            <ul>
+                <li ng-repeat="x in products">{{x}}</li>
+            </ul>
+        </div>
+        <!-- enter angular and jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://cdnjs.cloudfare/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+      <script src="app.js" type="text/javascript"></script>
+        <script src="mainCtrl.js" type="text/javascript"></script>
+        <script src="mainServ.js" type="text/javascript"></script>
+        <script src="domDir.js" type="text/javascript"></script>
+        <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  </body>
+</html>
